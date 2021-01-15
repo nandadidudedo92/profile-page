@@ -15,6 +15,7 @@ import { ContactComponent } from './contact/contact.component';
 import { FooterComponent } from './footer/footer.component';
 import { VideosComponent } from './videos/videos.component';
 import { TryComponent } from './try/try.component';
+import { ShortBioComponent } from './short-bio/short-bio.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { TryComponent } from './try/try.component';
     ContactComponent,
     FooterComponent,
     VideosComponent,
-    TryComponent
+    TryComponent,
+    ShortBioComponent
   ],
   imports: [
     BrowserModule,
