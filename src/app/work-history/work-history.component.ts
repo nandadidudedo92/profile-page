@@ -28,11 +28,15 @@ export class WorkHistoryComponent implements OnInit, AfterViewInit {
         targets: '.boxss',
         opacity: [0, 1],
         easing: "easeInOutExpo",
-        translateY: [-10, 0],
+        translateY: [Math.random() * (500 - -500) + -500, 0],
+        translateX: [Math.random() * (500 - -500) + -500, 0],
         duration: 100,
 
         delay: (el: any, i: number) => 150 * (i + 1)
       });
   }
+
+
+
 }
 
