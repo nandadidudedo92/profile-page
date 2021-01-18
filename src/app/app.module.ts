@@ -16,6 +16,9 @@ import { FooterComponent } from './footer/footer.component';
 import { VideosComponent } from './videos/videos.component';
 import { TryComponent } from './try/try.component';
 import { ShortBioComponent } from './short-bio/short-bio.component';
+import { HeaderMidComponent } from './header/header-mid/header-mid.component';
+import { HeaderLeftComponent } from './header/header-left/header-left.component';
+import { HeaderRightComponent } from './header/header-right/header-right.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +33,10 @@ import { ShortBioComponent } from './short-bio/short-bio.component';
     FooterComponent,
     VideosComponent,
     TryComponent,
-    ShortBioComponent
+    ShortBioComponent,
+    HeaderMidComponent,
+    HeaderLeftComponent,
+    HeaderRightComponent
   ],
   imports: [
     BrowserModule,
