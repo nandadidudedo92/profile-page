@@ -19,6 +19,7 @@ import { ShortBioComponent } from './short-bio/short-bio.component';
 import { HeaderMidComponent } from './header/header-mid/header-mid.component';
 import { HeaderLeftComponent } from './header/header-left/header-left.component';
 import { HeaderRightComponent } from './header/header-right/header-right.component';
+import { NavComponent } from './nav/nav.component';
 
 @NgModule({
   declarations: [
@@ -36,7 +37,8 @@ import { HeaderRightComponent } from './header/header-right/header-right.compone
     ShortBioComponent,
     HeaderMidComponent,
     HeaderLeftComponent,
-    HeaderRightComponent
+    HeaderRightComponent,
+    NavComponent
   ],
   imports: [
     BrowserModule,
