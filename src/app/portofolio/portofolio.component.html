@@ -7,79 +7,35 @@
 
     <div class="geser m-0 p-0 bg-dark">
     </div>
-    <div class="d-flex justify-content-around flex-wrap">
-        <div class="p-2 geser">
-            <div class="card" style="width: 18rem;">
-                <img class="card-img-top" style="height: 10rem;" src="../../assets/img/portofolios/blog.png"
-                    alt="Card image cap">
-                <div class="card-body">
-                    <h5 class="card-title">Tutorial Blog</h5>
-                    <p class="card-text">Personal blog to posting some tutorial that i've made.</p>
-                    <a href="https://ceritabodohtakbermutu.blogspot.com" target="_blank"
-                        class="btn btn-dark btn-block">Go To Project</a>
+    <div class="row">
+    <div class="d-flex justify-content-around flex-wrap col-8">
+        <div  *ngFor="let porto of listPorto; let i = index">
+            <div class="p-2 geser">
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top"  src="{{porto.img}}"
+                        alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">{{porto.title}}</h5>
+                        <p class="card-text">{{porto.description}}</p>
+                        <!-- <a href="https://ceritabodohtakbermutu.blogspot.com" target="_blank"
+                            class="btn btn-dark btn-block">Go To Project</a> -->
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="p-2 geser">
-            <div class="card" style="width: 18rem;">
-                <img class="card-img-top" style="height: 10rem;"
-                    src="../../assets/img/portofolios/training-material.jpg" alt="Card image cap">
-                <div class="card-body">
-                    <h5 class="card-title">Training Material</h5>
-                    <p class="card-text">Training Material Website for trainee in Enigma Camp.</p>
-                    <a href="#" class="btn btn-dark btn-block">Go To Project</a>
-                </div>
-            </div>
-        </div>
-        <div class="p-2 geser">
-            <div class="card" style="width: 18rem;">
-                <img class="card-img-top" style="height: 10rem;" src="../../assets/img/portofolios/sribu.png"
-                    alt="Card image cap">
-                <div class="card-body">
-                    <h5 class="card-title">Sribu Website Test Design</h5>
-                    <p class="card-text">Website design for Sribu test when first sign up.</p>
-                    <a href="#" class="btn btn-dark btn-block">Go To Project</a>
-                </div>
-            </div>
-        </div>
+        
+    </div>
 
+    <div class="col-4">
         <div class="p-2 geser">
             <div class="card" style="width: 18rem;">
-                <img class="card-img" style="height: 10rem;" src="../../assets/img/portofolios/rmt.png"
-                    alt="Card image cap">
-                <div class="card-body">
-                    <h5 class="card-title">RMTN</h5>
-                    <p class="card-text">Microservices Application at PT. Bank Mandiri (Persero).</p>
-                    <a href="#" class="btn btn-dark btn-block">Go To Project</a>
-                </div>
-            </div>
-        </div>
-
-        <div class="p-2 geser">
-            <div class="card" style="width: 18rem;">
-                <img class="card-img-top" style="height: 10rem; width: 6rem; margin: auto;"
-                    src="../../assets/img/portofolios/rmtn ios.png" alt="Card image cap">
+                <img class="card-img-top" src="../../assets/img/portofolios/rmtn ios.png" alt="Card image cap">
                 <div class="card-body">
                     <h5 class="card-title">RMTN Mobile</h5>
                     <p class="card-text">Mobile iOs app for RMTN Application.</p>
-                    <a href="#" class="btn btn-dark btn-block">Go To Project</a>
+                    
                 </div>
             </div>
         </div>
-
-        <div class="p-2 geser">
-            <div class="card" style="width: 18rem;">
-                <img class="card-img-top " style="height: 10rem; width: 15rem; margin: auto;"
-                    src="../../assets/img/portofolios/bag.png" alt="Card image cap">
-                <div class="card-body">
-                    <h5 class="card-title">Bag Commercial Design</h5>
-                    <p class="card-text">Bag Design for Feed at Muslimah Premium Shop.</p>
-                    <a href="https://www.instagram.com/p/CIiKf8KrkjV/?utm_source=ig_web_copy_link" target="_blank"
-                        class="btn btn-dark btn-block">Go To Project</a>
-                </div>
-            </div>
-        </div>
-
-
-
+    </div>
     </div>
