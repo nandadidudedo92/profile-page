@@ -1,6 +1,6 @@
 
 body{
-
+background-color: whitesmoke;
 font-family: 'PT Sans', sans-serif;
 }
 
@@ -36,4 +36,13 @@ font-size: 60px;
 
 a {
     color: black;
+}
+
+.bg-smoke{
+background-image: url('./assets/img/bg-smokde-dark.jpg');
+color: whitesmoke;
+}
+
+.bg-black{
+    background-color: black;
 }

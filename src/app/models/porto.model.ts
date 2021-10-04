@@ -1,4 +1,4 @@
-class Porto {
+export class Porto {
     title?: string;
     description?: string;
     img?: string;

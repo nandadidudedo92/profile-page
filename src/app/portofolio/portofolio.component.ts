@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import anime from 'animejs';
+import { Porto } from '../models/porto.model';
 
 @Component({
   selector: 'app-portofolio',
