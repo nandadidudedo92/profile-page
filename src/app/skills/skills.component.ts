@@ -1,5 +1,7 @@
 import { Component, OnInit, AfterViewInit } from '@angular/core';
 import anime from 'animejs';
+import { Observable } from 'rxjs/internal/Observable';
+import { interval } from 'rxjs/internal/observable/interval';
 @Component({
   selector: 'app-skills',
   templateUrl: './skills.component.html',
@@ -7,10 +9,19 @@ import anime from 'animejs';
 })
 export class SkillsComponent implements OnInit, AfterViewInit {
 
+  min = -100;
+  max = 100;
+  trans = Math.floor(Math.random() * (this.max - this.min) + this.min);
+
+
   constructor() { }
 
   ngOnInit(): void {
+    
   }
+    
+
+
   ngAfterViewInit() {
 
     // Wrap every letter in a span
@@ -23,7 +34,8 @@ export class SkillsComponent implements OnInit, AfterViewInit {
         targets: '.boxs',
         opacity: [0, 1],
         easing: "easeInOutExpo",
-        translateY: [-100, 0],
+        translateY: [this.trans, 0],
+        translateX: [this.trans, 0],
         duration: 1000,
         delay: (el: any, i: number) => 150 * (i + 1)
       }).add({
