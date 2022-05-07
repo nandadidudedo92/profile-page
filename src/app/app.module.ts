@@ -21,6 +21,7 @@ import { HeaderLeftComponent } from './header/header-left/header-left.component'
 import { HeaderRightComponent } from './header/header-right/header-right.component';
 import { NavComponent } from './nav/nav.component';
 import { JasaComponent } from './jasa/jasa.component';
+import { AbercioComponent } from './invitation/abercio/abercio.component';
 
 @NgModule({
   declarations: [
@@ -40,7 +41,8 @@ import { JasaComponent } from './jasa/jasa.component';
     HeaderLeftComponent,
     HeaderRightComponent,
     NavComponent,
-    JasaComponent
+    JasaComponent,
+    AbercioComponent
   ],
   imports: [
     BrowserModule,
