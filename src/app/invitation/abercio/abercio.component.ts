@@ -10,6 +10,9 @@ export class AbercioComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    
   }
+
+  
 
 }
