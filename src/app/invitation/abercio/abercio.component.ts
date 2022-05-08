@@ -7,12 +7,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AbercioComponent implements OnInit {
 
+  enter: boolean = false;
+
   constructor() { }
 
   ngOnInit(): void {
     
+    
+   
   }
 
-  
 
+  open() {
+    this.enter = true;
+  }
 }
